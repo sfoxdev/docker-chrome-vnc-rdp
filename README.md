@@ -22,5 +22,5 @@ docker run -d -p 5900:5900 -p 3389:3389 --name chrome sfoxdev/chrome-vnc-rdp
 ### Run container with password
 
 ```
-docker run -d -e VNC_PASSWORD=mypassword -p 5900:5900 -p 3389:3389 --name chrome sfoxdev/chrome-vnc-rdp
+docker run -d -e PASSWORD=mypassword -p 5900:5900 -p 3389:3389 --name chrome sfoxdev/chrome-vnc-rdp
 ```

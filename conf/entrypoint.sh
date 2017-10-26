@@ -22,8 +22,8 @@ for passwd_file in ${passwd_files[@]}; do
 done
 
 # override above if VNC_PASSWORD env var is set (insecure!)
-if [[ "$VNC_PASSWORD" != "" ]]; then
-  export X11VNC_AUTH="-passwd $VNC_PASSWORD"
+if [[ "$PASSWORD" != "" ]]; then
+  export X11VNC_AUTH="-passwd $PASSWORD"
 fi
 
 exec "$@"
